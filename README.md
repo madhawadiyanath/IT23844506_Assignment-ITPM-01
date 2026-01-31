@@ -26,15 +26,9 @@
 ---
 
 ## 🎯 Assignment Overview
-This project contains comprehensive automated testing for the SwiftTranslator web application using Playwright. It includes **40 test cases** covering all required categories from the assignment brief.
+This project contains comprehensive automated testing for the SwiftTranslator web application using Playwright. It includes **36 test cases** covering all required categories from the assignment brief.
 
-### ✅ Requirements Met
-- **26 Positive Test Cases** (Requirement: 24+)
-- **12 Negative Test Cases** (Requirement: 10+)
-- **2 UI Test Cases** (Requirement: 1+)
-- **All 8 testing categories covered**
-- **Full Playwright automation implemented**
-- **Cross-browser testing support**
+
 
 ---
 
@@ -49,7 +43,6 @@ This project contains comprehensive automated testing for the SwiftTranslator we
 ```bash
 # 1. Clone the repository
 git clone https://github.com/madhawadiyanath/IT23844506_Assignment-ITPM-01.git
-
 # 2. Navigate to project directory
 cd IT23844506_Assignment-ITPM-01
 
@@ -107,11 +100,11 @@ npx playwright test tests/ui/
 - **Informal Language:** Slang and colloquial phrasing
 
 ### Test Statistics
-- **Total Tests:** 40
-- **Positive Tests:** 26
-- **Negative Tests:** 12
+- **Total Tests:** 36
+- **Positive Tests:** 24
+- **Negative Tests:** 10
 - **UI Tests:** 2
-- **Success Rate:** 100% (when website is functional)
+
 
 ---
 
@@ -126,6 +119,7 @@ IT23844506_Assignment-ITPM-01/
 │   └── test-results/
 ├── tests/
 │   └── example.spec.ts
+    └── singlish-to-sinhala.spec.ts
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
