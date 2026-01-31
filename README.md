@@ -218,7 +218,3 @@ This submission includes:
 
 ---
 
-<p align="center">
-  <b>✨ Good luck! ✨</b><br>
-  <i>For full marks, ensure your report is attached, all tests pass, and your code is well-commented and organized.</i>
-</p>
