@@ -1,41 +1,47 @@
-# 🏆 ITPM Assignment 01 - Playwright Automation Testing
+🎓 IT23844506 - ITPM Assignment 01: Playwright Testing Project
+👨‍🎓 Student Information
+Name: Madhawa Diyanath
 
-## 👨‍🎓 Student Information
-- **Name:** Madhawa Diyanath
-- **IT Number:** IT23844506
-- **Module:** Information Technology Project Management
-- **Assignment:** 01 - Playwright Testing Project
+IT Number: IT23844506
 
----
+Module: Information Technology Project Management (IT3040)
 
-## 📖 Introduction
-This repository contains a comprehensive Playwright automation testing suite for a web application, developed as part of the ITPM module assignment. The project demonstrates best practices in automated testing, reporting, and configuration.
+Assignment: 01 - Playwright Testing Project
 
-## 📋 Project Overview
-- **Framework:** Playwright
-- **Test Cases:** 31 (Functional & UI)
-- **Reporting:** HTML report generated after each run
-- **Config:** Custom Playwright configuration for parallel execution and browser support
+Option: Option 1 (Singlish to Sinhala)
 
-## ✨ Features
-- Automated Singlish to Sinhala conversion tests
-- UI and functional coverage
-- Parallel test execution
-- HTML test reports
-- Easy setup and execution
+Testing Website: https://www.swifttranslator.com/
 
-## 🚀 Quick Setup
+🎯 Assignment Overview
+This project contains comprehensive automated testing for the SwiftTranslator web application using Playwright. It includes 40 test cases covering all required categories from the assignment brief.
 
-### Prerequisites
-- Node.js (v16+)
-- npm (or yarn)
+✅ Requirements Met
+26 Positive Test Cases (Requirement: 24+)
 
-### Installation Steps
-```bash
+12 Negative Test Cases (Requirement: 10+)
+
+2 UI Test Cases (Requirement: 1+)
+
+All 8 testing categories covered
+
+Full Playwright automation implemented
+
+Cross-browser testing support
+
+🚀 Quick Setup
+Prerequisites
+Node.js (version 16 or higher)
+
+npm or yarn package manager
+
+Git
+
+Installation Steps
+bash
 # 1. Clone the repository
 git clone https://github.com/madhawadiyanath/IT23844506_Assignment-ITPM-01.git
 
-# 2. Navigate to the project directory
+# 2. Navigate to project directory
 cd IT23844506_Assignment-ITPM-01
 
 # 3. Install dependencies
@@ -43,47 +49,161 @@ npm install
 
 # 4. Install Playwright browsers
 npx playwright install
-```
-
-## 🧑‍💻 Usage Instructions
-To run all tests and generate a report:
-```bash
+🧪 Running Tests
+Run All Tests
+bash
 npx playwright test
-```
-After running, view the HTML report:
-```bash
+Run with UI Mode
+bash
+npx playwright test --ui
+Generate HTML Report
+bash
+npx playwright test --reporter=html
 npx playwright show-report
-```
-The report will open in your browser, or you can manually open `playwright-report/index.html`.
+Run Specific Test Types
+bash
+# Run only positive tests
+npx playwright test tests/positive/
 
-## 🧪 Test Structure
-- All test cases are in the `tests/` folder (see `example.spec.ts`).
-- Each test covers a unique scenario for Singlish to Sinhala conversion.
-- Tests use Playwright's best practices for selectors and assertions.
+# Run only negative tests
+npx playwright test tests/negative/
 
-## 📊 Test Results & Reporting
-- Test results are saved in the `test-results/` folder.
-- HTML reports are generated in the `playwright-report/` folder.
-- For failed tests, error context is available in `test-results/<test-folder>/error-context.md`.
+# Run UI tests
+npx playwright test tests/ui/
+📊 Test Coverage
+Testing Categories (Based on Appendix 1)
+Sentence Structures - Simple, compound, complex sentences
 
-## ⚙️ Configuration
-- Main config: `playwright.config.ts`
-- Custom settings for parallelism, retries, and browser projects
-- Easily modify config for different environments
+Daily Language Usage - Greetings, requests, conversational inputs
 
-## 🛠️ Troubleshooting
-- If tests fail, check:
-  - Node.js version (should be 16+)
-  - Playwright browsers installed (`npx playwright install`)
-  - Dependencies installed (`npm install`)
-- For more details, see error-context files in `test-results/`
+Word Combinations - Multi-word expressions, joined/segmented variations
 
-## 📚 References
-- [Playwright Documentation](https://playwright.dev/)
-- [Assignment Guidelines](your-assignment-link-here)
-- [Node.js Documentation](https://nodejs.org/)
+Grammatical Forms - Tense variations, negation, pronouns
 
-## 🙌 Acknowledgements
-- Developed by Madhawa Diyanath for ITPM Assignment 01
-- Special thanks to module instructors and Playwright community
+Input Length Variation - Short (≤30), Medium (31-299), Long (≥300 chars)
 
+Mixed Language Content - Singlish + English terms
+
+Punctuation & Formatting - Currency, dates, special characters
+
+Informal Language - Slang and colloquial phrasing
+
+Test Statistics
+Total Tests: 40
+
+Positive Tests: 26
+
+Negative Tests: 12
+
+UI Tests: 2
+
+Success Rate: 100% (when website is functional)
+
+📁 Project Structure
+text
+IT23844506_Assignment-ITPM-01/
+├── tests/                          # Test cases
+│   ├── positive/                   # 26 positive test cases
+│   ├── negative/                   # 12 negative test cases
+│   └── ui/                         # 2 UI test cases
+├── pages/                          # Page Object Model
+├── fixtures/                       # Test data
+├── playwright.config.ts            # Configuration
+├── package.json                    # Dependencies
+└── README.md                       # This file
+📋 Available npm Scripts
+bash
+# Run all tests
+npm test
+
+# Run tests with UI
+npm run test:ui
+
+# Run tests headed (with browser UI)
+npm run test:headed
+
+# Generate HTML report
+npm run test:report
+
+# View generated report
+npm run show-report
+
+# Run smoke test
+npm run test:smoke
+📊 Test Results & Reporting
+After test execution, view results in:
+
+HTML Report: playwright-report/index.html
+
+Console output with detailed results
+
+Screenshots for failed tests (in test-results/)
+
+Videos for failed tests (if enabled)
+
+⚙️ Configuration
+The project uses a custom playwright.config.ts with:
+
+Parallel execution across browsers
+
+Automatic screenshots on failure
+
+HTML and JUnit reporting
+
+Custom timeouts for network conditions
+
+Base URL set to SwiftTranslator.com
+
+🐛 Troubleshooting
+Common Issues
+Browser installation failed:
+
+bash
+npx playwright install --force
+Tests running slowly:
+
+bash
+npx playwright test --workers=2
+Website not loading:
+
+Check internet connection
+
+Verify https://www.swifttranslator.com/ is accessible
+
+Add --timeout=60000 for slower connections
+
+TypeScript errors:
+
+bash
+rm -rf node_modules package-lock.json
+npm install
+📝 Test Development Notes
+Page Object Model pattern followed for maintainability
+
+Test data separated from test logic
+
+Clear assertions with meaningful error messages
+
+Independent tests with proper cleanup
+
+Real-time validation of conversion updates
+
+📦 Submission Files
+This submission includes:
+
+Complete Playwright project with all test cases
+
+Excel test case file with 40 documented test cases
+
+GitHub repository with public access
+
+All configuration files for easy execution
+
+📞 Contact & Support
+Student: Madhawa Diyanath
+
+IT Number: IT23844506
+
+GitHub: https://github.com/madhawadiyanath
+
+Repository: https://github.com/madhawadiyanath/IT23844506_Assignment-ITPM-01
