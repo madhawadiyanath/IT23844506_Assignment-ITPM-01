@@ -5,7 +5,7 @@
 - **IT Number:** IT23844506
 - **Module:** Information Technology Project Management
 - **Assignment:** 01 - Playwright Testing Project
-- **Date:** $(date +%Y-%m-%d)
+
 
 ## 📋 Project Overview
 This project contains automated test cases for web application testing using Playwright. Developed for ITPM module assignment with 31 test cases covering functional and UI testing.
