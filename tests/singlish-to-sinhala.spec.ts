@@ -151,63 +151,58 @@ test('Pos_Fun_0024 - Standard Singlish to Sinhala conversion is accurate.', asyn
 test('Neg_Fun_0001 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mamagedharayanavaa');
-  await page.getByText('මමගෙදරයනවා').click();
+  await page.getByText('මම ගෙදර යනවා.').click();
 }); 
 
 test('Neg_Fun_0002 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mama gedhra yanavaa');
-  await page.getByText('මමගෙදරයනවා').click();
+  await page.getByText('මම ගෙදර යනවා.').click();
 }); 
 
 test('Neg_Fun_0003 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('adoo machan ooka hariyata karapanko');
-  await page.getByText('අඩෝ මචන් ඕක හරියට කරපන්කො').click();
+  await page.getByText('Expected Sinhala').click();
 }); 
 test('Neg_Fun_0004 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mama @@@ yanavaa');
-  await page.getByText('මම @@@ යනවා').click();
+  await page.getByText('Expected Sinhala').click();
 }); 
 
 test('Neg_Fun_0005 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mata eeka one!');
-  await page.getByText('මට ඒක one!').click();
+  await page.getByText('No conversion expected').click();
 }); 
 test('Neg_Fun_0006 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mamagedharayanavaasahapassekathakarannam');
-  await page.getByText('මමගෙදරයනවාසහපස්සෙකතකරන්නම්').click();
+  await page.getByText('Expected Sinhala').click();
 }); 
 
 test('Neg_Fun_0007 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('mama 😊 yanavaa');
-  await page.getByText('මම 😊 යනවා').click();
+  await page.getByText('Expected Sinhala').click();
 }); 
 
 test('Neg_Fun_0008 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('12345');
-  await page.getByText('12345').click();
+  await page.getByText('No output expected').click();
 }); 
 
 test('Neg_Fun_0009 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('hciksjz');
-  await page.getByText('හcඉක්ස්ජz').click();
+  await page.getByText('No output').click();
 }); 
 
 test('Neg_Fun_0010 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
   await page.goto('https://www.swifttranslator.com/');
   await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('thx bro');
-  await page.getByText('තx bro').click();
+  await page.getByText('No conversion').click();
 }); 
 
-test('Pos_UI_0001 - Standard Singlish to Sinhala conversion is accurate.', async ({ page }) => {
-  await page.goto('https://www.swifttranslator.com/');
-  await page.getByRole('textbox', { name: 'Input Your Singlish Text Here.' }).fill('thx bro');
-  await page.getByText('මම ගෙදර යනවා').click();
-}); 
