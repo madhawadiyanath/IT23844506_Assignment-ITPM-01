@@ -87,6 +87,3 @@ The report will open in your browser, or you can manually open `playwright-repor
 - Developed by Madhawa Diyanath for ITPM Assignment 01
 - Special thanks to module instructors and Playwright community
 
----
-
-> **Tip:** For full marks, ensure your report is attached, all tests pass, and your code is well-commented and organized.
