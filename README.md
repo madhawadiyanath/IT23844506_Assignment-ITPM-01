@@ -118,15 +118,19 @@ npx playwright test tests/ui/
 ## 📁 Project Structure
 ```text
 IT23844506_Assignment-ITPM-01/
-├── tests/                          # Test cases
-│   ├── positive/                   # 26 positive test cases
-│   ├── negative/                   # 12 negative test cases
-│   └── ui/                         # 2 UI test cases
-├── pages/                          # Page Object Model
-├── fixtures/                       # Test data
-├── playwright.config.ts            # Configuration
-├── package.json                    # Dependencies
-└── README.md                       # This file
+├── .github/
+├── node_modules/
+├── playwright-report/
+│   ├── data/
+│   ├── index.html
+│   └── test-results/
+├── tests/
+│   └── example.spec.ts
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── playwright.config.ts
+└── README.md
 ```
 
 ---
